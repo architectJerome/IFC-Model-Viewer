@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFC Model Viewer</title>
+    <script type="module" crossorigin src="/IFC-Model-Viewer/assets/index-rS06ahmN.js"></script>
+    <link rel="stylesheet" crossorigin href="/IFC-Model-Viewer/assets/index-COKvujsv.css">
+  </head>
+  <body>
+    <!-- Container for Three.js 3D Scene -->
+    <div id="container"></div>
+
+    <!-- UI Overlay for glassmorphism aesthetic -->
+    <div id="ui-container">
+      <div class="glass-panel">
+        <h1>IFC Web Viewer</h1>
+        <p>Upload an IFC file to view in 3D</p>
+        
+        <div class="file-uploader">
+          <input type="file" id="file-input" accept=".ifc" />
+          <label for="file-input" class="upload-btn">Select IFC File</label>
+        </div>
+
+        <div id="loading-indicator" class="hidden">
+           <div class="spinner"></div>
+           <p>Processing model...</p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
